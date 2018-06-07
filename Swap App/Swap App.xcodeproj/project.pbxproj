@@ -14,6 +14,9 @@
 		3A30C94120C92EDC00991239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A30C94020C92EDC00991239 /* Assets.xcassets */; };
 		3A30C94420C92EDC00991239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A30C94220C92EDC00991239 /* LaunchScreen.storyboard */; };
 		3A30C95120C92FC500991239 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C95020C92FC500991239 /* NetworkManager.swift */; };
+		3A30C95720C9401700991239 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C95620C9401700991239 /* UserModel.swift */; };
+		3A30C95920C94FE100991239 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C95820C94FE100991239 /* UserManager.swift */; };
+		3A30C95F20C96A3E00991239 /* CoredataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C95E20C96A3E00991239 /* CoredataManager.swift */; };
 		9C42B2C9CF4CF7D77A150B32 /* Pods_Swap_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD00C15EA9BE59A5A36FF49 /* Pods_Swap_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		3A30C94320C92EDC00991239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A30C94520C92EDC00991239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A30C95020C92FC500991239 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3A30C95620C9401700991239 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3A30C95820C94FE100991239 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		3A30C95E20C96A3E00991239 /* CoredataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataManager.swift; sourceTree = "<group>"; };
 		3B9D8B673DA87ECB163CDE6E /* Pods-Swap App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swap App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swap App/Pods-Swap App.release.xcconfig"; sourceTree = "<group>"; };
 		5DD00C15EA9BE59A5A36FF49 /* Pods_Swap_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swap_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,7 +95,7 @@
 		3A30C94C20C92EF600991239 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3A30C93D20C92EDA00991239 /* Swap_App.xcdatamodeld */,
+				3A30C95220C9355600991239 /* Coredata */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -104,6 +110,8 @@
 		3A30C94E20C92F1200991239 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A30C95D20C96A2D00991239 /* Coredata */,
+				3A30C95A20C94FE900991239 /* User */,
 				3A30C94F20C92F2200991239 /* Network */,
 			);
 			path = Controllers;
@@ -113,8 +121,49 @@
 			isa = PBXGroup;
 			children = (
 				3A30C95020C92FC500991239 /* NetworkManager.swift */,
+				3A30C95520C9400600991239 /* Models */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		3A30C95220C9355600991239 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C93D20C92EDA00991239 /* Swap_App.xcdatamodeld */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		3A30C95520C9400600991239 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C95620C9401700991239 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A30C95A20C94FE900991239 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C95820C94FE100991239 /* UserManager.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		3A30C95D20C96A2D00991239 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C95E20C96A3E00991239 /* CoredataManager.swift */,
+				3A30C96020C96CEE00991239 /* Models */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		3A30C96020C96CEE00991239 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5815514B40D5FC10824C1F28 /* Frameworks */ = {
@@ -248,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A30C95F20C96A3E00991239 /* CoredataManager.swift in Sources */,
+				3A30C95920C94FE100991239 /* UserManager.swift in Sources */,
 				3A30C95120C92FC500991239 /* NetworkManager.swift in Sources */,
 				3A30C93920C92EDA00991239 /* ViewController.swift in Sources */,
 				3A30C93F20C92EDA00991239 /* Swap_App.xcdatamodeld in Sources */,
+				3A30C95720C9401700991239 /* UserModel.swift in Sources */,
 				3A30C93720C92EDA00991239 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,9 +450,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swap App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AK.Swap-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -413,9 +469,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swap App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AK.Swap-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

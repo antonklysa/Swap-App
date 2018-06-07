@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Swap App/Controllers/Coredata/Models/Brand+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Swap App/Controllers/Coredata/Models/Brand+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Swap App/Controllers/Coredata/Models/History+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Swap App/Controllers/Coredata/Models/History+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:Swap App.xcodeproj">
    </FileRef>
    <FileRef
