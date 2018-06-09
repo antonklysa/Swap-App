@@ -13,7 +13,7 @@ class BaseViewController: UIViewController {
     
     var topLogoImage: UIImageView!
     var fumerTueView: UIView!
-    private var backgroundImage: UIImageView!
+    public var backgroundImage: UIImageView!
     
     override var prefersStatusBarHidden: Bool {
         return true

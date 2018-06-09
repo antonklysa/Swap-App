@@ -130,13 +130,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMa-ar-39I">
-                                <rect key="frame" x="905" y="75" width="64" height="64"/>
-                                <state key="normal" image="settings_icon"/>
-                                <connections>
-                                    <action selector="settingsButtonActionWithSender:" destination="MLE-e8-rpP" eventType="touchUpInside" id="RjR-e9-J0w"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ro-Hk-LKP">
                                 <rect key="frame" x="438" y="584.5" width="148" height="47"/>
                                 <state key="normal" image="start_button_image"/>
@@ -147,14 +140,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_center_image" translatesAutoresizingMaskIntoConstraints="NO" id="PXD-52-qsB">
                                 <rect key="frame" x="277.5" y="173.5" width="469" height="441"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMa-ar-39I">
+                                <rect key="frame" x="960" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1jb-pQ-wPj"/>
+                                    <constraint firstAttribute="width" constant="44" id="5Lb-kz-WtH"/>
+                                </constraints>
+                                <state key="normal" image="settings_icon"/>
+                                <connections>
+                                    <action selector="settingsButtonActionWithSender:" destination="MLE-e8-rpP" eventType="touchUpInside" id="RjR-e9-J0w"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PXD-52-qsB" firstAttribute="centerY" secondItem="0mJ-1X-IHz" secondAttribute="centerY" id="0zp-n6-IrX"/>
                             <constraint firstItem="4Ro-Hk-LKP" firstAttribute="top" secondItem="PXD-52-qsB" secondAttribute="bottom" constant="-30" id="S10-zj-5Ke"/>
-                            <constraint firstItem="0mJ-1X-IHz" firstAttribute="trailing" secondItem="MMa-ar-39I" secondAttribute="trailing" constant="55" id="Ynn-A0-i5n"/>
+                            <constraint firstItem="0mJ-1X-IHz" firstAttribute="trailing" secondItem="MMa-ar-39I" secondAttribute="trailing" constant="20" id="Ynn-A0-i5n"/>
                             <constraint firstItem="PXD-52-qsB" firstAttribute="centerX" secondItem="0mJ-1X-IHz" secondAttribute="centerX" id="ZFZ-5t-OiB"/>
-                            <constraint firstItem="MMa-ar-39I" firstAttribute="top" secondItem="0mJ-1X-IHz" secondAttribute="top" constant="55" id="cuo-Ve-ivk"/>
+                            <constraint firstItem="MMa-ar-39I" firstAttribute="top" secondItem="0mJ-1X-IHz" secondAttribute="top" constant="8" id="cuo-Ve-ivk"/>
                             <constraint firstItem="4Ro-Hk-LKP" firstAttribute="centerX" secondItem="0mJ-1X-IHz" secondAttribute="centerX" id="uqu-lZ-Q4l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0mJ-1X-IHz"/>
@@ -254,8 +258,20 @@ v1.0</string>
                                     <action selector="syncButtonActionWithSender:" destination="J8T-yK-oo3" eventType="touchUpInside" id="Gbd-DO-5n3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhw-uE-kRC">
+                                <rect key="frame" x="32" y="60" width="275" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Retour" image="config_back">
+                                    <color key="titleColor" red="0.84313725490000002" green="0.094117647060000004" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="J8T-yK-oo3" eventType="touchUpInside" id="ACF-AD-0F2"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xTo-e9-MFF" firstAttribute="leading" secondItem="m6k-iX-TzO" secondAttribute="leading" id="2ic-4k-kMt"/>
                             <constraint firstItem="mcc-hF-tg6" firstAttribute="centerY" secondItem="m6k-iX-TzO" secondAttribute="centerY" id="5tx-BU-0Qd"/>
@@ -461,7 +477,7 @@ v1.0</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4W9-Iq-A6Z" firstAttribute="bottom" secondItem="yaw-8k-OZY" secondAttribute="bottom" constant="115" id="3SH-P0-wGi"/>
                             <constraint firstItem="tLZ-G2-OVi" firstAttribute="trailing" secondItem="xTS-VZ-r8r" secondAttribute="trailing" id="4WM-vg-L5P"/>
@@ -489,6 +505,7 @@ v1.0</string>
     <resources>
         <image name="brand_texfield_image" width="247" height="55"/>
         <image name="calculate_buttom_image" width="152" height="52"/>
+        <image name="config_back" width="19" height="28"/>
         <image name="end_button_image" width="123" height="42"/>
         <image name="equal_icon" width="25" height="17"/>
         <image name="final_view_placeholder" width="385" height="69"/>
@@ -497,7 +514,7 @@ v1.0</string>
         <image name="login_textfield_placeholder" width="439" height="45"/>
         <image name="login_title_image" width="199" height="38"/>
         <image name="settings_disconnect" width="183" height="42"/>
-        <image name="settings_icon" width="64" height="64"/>
+        <image name="settings_icon" width="20" height="20"/>
         <image name="start_button_image" width="148" height="47"/>
         <image name="stick_textfiled_image" width="65" height="55"/>
         <image name="stick_title_image" width="80" height="23"/>

@@ -24,7 +24,7 @@ class SettingsViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //setup controller props
         
         contentView.layer.cornerRadius = 5
@@ -38,11 +38,16 @@ class SettingsViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        self.topLogoImage.isHidden = true
     }
     
     
     //MARK: actions
+    
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func disconnectButtonAction(sender: UIButton) {
         //TODO: implement disconnect function
