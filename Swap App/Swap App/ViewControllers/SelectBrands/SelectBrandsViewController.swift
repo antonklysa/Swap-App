@@ -63,7 +63,7 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
         let selectedBrand: Brand = CoredataManager.sharedInstance.getBrands()![selectedIndex]
         
         let historyDict: [String: Any] = ["input": NSNumber(value: Int(countTextField.text!)!),
-                                    "output": NSNumber(value: Int(Double(countTextField.text!)! * selectedBrand.pack_price)),
+                                    "output": NSNumber(value: Int(Double(countTextField.text!)! * selectedBrand.stick_price)),
                                     "brand_name": selectedBrand.name!,
                                     "time": NSNumber.init(value: 123)]
         

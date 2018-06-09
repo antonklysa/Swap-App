@@ -22,8 +22,8 @@ class CalculateBrandsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        inputLabel.text = "\(history.input)"
-        outputLabel.text = "\(history.output)"
+        inputLabel.text = "\(history.input)" + " " + "\(history.brand_name!)"
+        outputLabel.text = "\(history.output)" + " " + "ﺪﻠﻴﻓﺮﺘﺴﻴﺷ "
     }
     
     
