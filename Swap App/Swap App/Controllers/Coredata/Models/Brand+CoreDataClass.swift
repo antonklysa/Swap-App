@@ -1,8 +1,9 @@
 //
 //  Brand+CoreDataClass.swift
-//  
+//  Swap App
 //
-//  Created by Anton Klysa on 6/7/18.
+//  Created by Yaroslav Brekhunchenko on 6/9/18.
+//  Copyright © 2018 Anton Klysa. All rights reserved.
 //
 //
 

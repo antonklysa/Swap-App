@@ -1,8 +1,9 @@
 //
 //  Brand+CoreDataProperties.swift
-//  
+//  Swap App
 //
-//  Created by Anton Klysa on 6/7/18.
+//  Created by Yaroslav Brekhunchenko on 6/9/18.
+//  Copyright © 2018 Anton Klysa. All rights reserved.
 //
 //
 
@@ -19,6 +20,6 @@ extension Brand {
     @NSManaged public var id: Int32
     @NSManaged public var name: String?
     @NSManaged public var pack_price: Double
-    @NSManaged public var strick_price: Double
+    @NSManaged public var stick_price: Double
 
 }

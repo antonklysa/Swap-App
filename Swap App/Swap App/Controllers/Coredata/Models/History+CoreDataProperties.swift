@@ -1,8 +1,9 @@
 //
 //  History+CoreDataProperties.swift
-//  
+//  Swap App
 //
-//  Created by Anton Klysa on 6/7/18.
+//  Created by Yaroslav Brekhunchenko on 6/9/18.
+//  Copyright © 2018 Anton Klysa. All rights reserved.
 //
 //
 
@@ -16,9 +17,9 @@ extension History {
         return NSFetchRequest<History>(entityName: "History")
     }
 
+    @NSManaged public var brand_name: String?
     @NSManaged public var input: Int32
     @NSManaged public var output: Int32
-    @NSManaged public var brand_name: String?
     @NSManaged public var time: Int32
 
 }
