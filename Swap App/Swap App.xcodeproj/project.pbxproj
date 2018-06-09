@@ -562,15 +562,19 @@
 			baseConfigurationReference = 39F3B318CA8965533238A601 /* Pods-Swap App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9JLRSR336H;
 				INFOPLIST_FILE = "Swap App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "AK.Swap-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oze-lca.SwapApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f0257963-5f0c-47cd-a2c8-8ed2e1d09382";
+				PROVISIONING_PROFILE_SPECIFIER = SwapApp_AdHoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,15 +586,19 @@
 			baseConfigurationReference = 3B9D8B673DA87ECB163CDE6E /* Pods-Swap App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9JLRSR336H;
 				INFOPLIST_FILE = "Swap App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "AK.Swap-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oze-lca.SwapApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f0257963-5f0c-47cd-a2c8-8ed2e1d09382";
+				PROVISIONING_PROFILE_SPECIFIER = SwapApp_AdHoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
