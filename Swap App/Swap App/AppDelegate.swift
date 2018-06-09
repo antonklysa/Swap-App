@@ -17,6 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        //autologin
+        if UserDefaults.standard.object(forKey: "kCurrentUser") != nil {
+            
+            UserManager.sharedInstance.currentUser = (NSKeyedUnarchiver.unarchiveObject(with: UserDefaults.standard.object(forKey: "kCurrentUser") as! Data) as? UserModel)!
+            
+            DispatchQueue.main.async {
+                let nacVC: UINavigationController = UINavigationController.init(rootViewController: UIStoryboard.viewControllerWith(identifier: HomeViewController.nameOfClass))
+                self.window?.rootViewController = nacVC
+            }
+            
+        }
+        
         return true
     }
 

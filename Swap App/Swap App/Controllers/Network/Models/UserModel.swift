@@ -16,14 +16,17 @@ class UserModel: MTLModel, MTLJSONSerializing {
     @objc var name: String?
     @objc var team: String?
     
-    var host_id: String?
+    @objc var host_id: String?
+    @objc var syncDate: String?
     
     static func jsonKeyPathsByPropertyKey() -> [AnyHashable : Any]! {
         return [
             "city": "city",
             "message": "message",
             "name": "name",
-            "team": "team"]
+            "team": "team",
+            "host_id": "host_id",
+            "syncDate": "syncDate"]
     }
     
 }

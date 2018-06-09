@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A30C48F20CA4E04001100E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C48E20CA4E04001100E0 /* LoginViewController.swift */; };
+		3A30C49220CA4E2B001100E0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C49120CA4E2B001100E0 /* BaseViewController.swift */; };
+		3A30C49520CA616C001100E0 /* UIAlertController+AwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C49420CA616C001100E0 /* UIAlertController+AwapApp.swift */; };
+		3A30C49820CA64AD001100E0 /* SelectBrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C49720CA64AD001100E0 /* SelectBrandsViewController.swift */; };
+		3A30C49B20CA64CE001100E0 /* CalculateBrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C49A20CA64CE001100E0 /* CalculateBrandsViewController.swift */; };
+		3A30C49E20CAD004001100E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C49D20CAD004001100E0 /* HomeViewController.swift */; };
+		3A30C4A020CAD0AB001100E0 /* UIStoryboard+SwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C49F20CAD0AB001100E0 /* UIStoryboard+SwapApp.swift */; };
+		3A30C4A320CAD17B001100E0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C4A220CAD17B001100E0 /* SettingsViewController.swift */; };
 		3A30C93720C92EDA00991239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C93620C92EDA00991239 /* AppDelegate.swift */; };
 		3A30C93920C92EDA00991239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C93820C92EDA00991239 /* ViewController.swift */; };
 		3A30C93C20C92EDA00991239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A30C93A20C92EDA00991239 /* Main.storyboard */; };
@@ -22,6 +30,14 @@
 
 /* Begin PBXFileReference section */
 		39F3B318CA8965533238A601 /* Pods-Swap App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swap App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swap App/Pods-Swap App.debug.xcconfig"; sourceTree = "<group>"; };
+		3A30C48E20CA4E04001100E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3A30C49120CA4E2B001100E0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3A30C49420CA616C001100E0 /* UIAlertController+AwapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+AwapApp.swift"; sourceTree = "<group>"; };
+		3A30C49720CA64AD001100E0 /* SelectBrandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBrandsViewController.swift; sourceTree = "<group>"; };
+		3A30C49A20CA64CE001100E0 /* CalculateBrandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBrandsViewController.swift; sourceTree = "<group>"; };
+		3A30C49D20CAD004001100E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3A30C49F20CAD0AB001100E0 /* UIStoryboard+SwapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+SwapApp.swift"; sourceTree = "<group>"; };
+		3A30C4A220CAD17B001100E0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3A30C93320C92EDA00991239 /* Swap App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swap App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A30C93620C92EDA00991239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A30C93820C92EDA00991239 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +66,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A30C48D20CA4DEE001100E0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C48E20CA4E04001100E0 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3A30C49020CA4E1B001100E0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C49120CA4E2B001100E0 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3A30C49320CA6144001100E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C49420CA616C001100E0 /* UIAlertController+AwapApp.swift */,
+				3A30C49F20CAD0AB001100E0 /* UIStoryboard+SwapApp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A30C49620CA6483001100E0 /* SelectBrands */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C49720CA64AD001100E0 /* SelectBrandsViewController.swift */,
+			);
+			path = SelectBrands;
+			sourceTree = "<group>";
+		};
+		3A30C49920CA64B1001100E0 /* CalculateBrands */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C49A20CA64CE001100E0 /* CalculateBrandsViewController.swift */,
+			);
+			path = CalculateBrands;
+			sourceTree = "<group>";
+		};
+		3A30C49C20CACFE9001100E0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C49D20CAD004001100E0 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3A30C4A120CAD16B001100E0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3A30C4A220CAD17B001100E0 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		3A30C92A20C92EDA00991239 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +148,7 @@
 				3A30C93820C92EDA00991239 /* ViewController.swift */,
 				3A30C94E20C92F1200991239 /* Controllers */,
 				3A30C94D20C92F0300991239 /* Views */,
+				3A30C49320CA6144001100E0 /* Extensions */,
 				3A30C94C20C92EF600991239 /* Resources */,
 				3A30C94B20C92EEA00991239 /* ViewControllers */,
 				3A30C93A20C92EDA00991239 /* Main.storyboard */,
@@ -88,6 +162,12 @@
 		3A30C94B20C92EEA00991239 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A30C49020CA4E1B001100E0 /* Base */,
+				3A30C48D20CA4DEE001100E0 /* Login */,
+				3A30C49C20CACFE9001100E0 /* Home */,
+				3A30C4A120CAD16B001100E0 /* Settings */,
+				3A30C49620CA6483001100E0 /* SelectBrands */,
+				3A30C49920CA64B1001100E0 /* CalculateBrands */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -260,12 +340,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Swap App/Pods-Swap App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Mantle/Mantle.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mantle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -299,11 +385,19 @@
 			files = (
 				3A30C95F20C96A3E00991239 /* CoredataManager.swift in Sources */,
 				3A30C95920C94FE100991239 /* UserManager.swift in Sources */,
+				3A30C49820CA64AD001100E0 /* SelectBrandsViewController.swift in Sources */,
 				3A30C95120C92FC500991239 /* NetworkManager.swift in Sources */,
 				3A30C93920C92EDA00991239 /* ViewController.swift in Sources */,
+				3A30C48F20CA4E04001100E0 /* LoginViewController.swift in Sources */,
+				3A30C49220CA4E2B001100E0 /* BaseViewController.swift in Sources */,
 				3A30C93F20C92EDA00991239 /* Swap_App.xcdatamodeld in Sources */,
+				3A30C4A320CAD17B001100E0 /* SettingsViewController.swift in Sources */,
+				3A30C49520CA616C001100E0 /* UIAlertController+AwapApp.swift in Sources */,
+				3A30C49B20CA64CE001100E0 /* CalculateBrandsViewController.swift in Sources */,
 				3A30C95720C9401700991239 /* UserModel.swift in Sources */,
+				3A30C49E20CAD004001100E0 /* HomeViewController.swift in Sources */,
 				3A30C93720C92EDA00991239 /* AppDelegate.swift in Sources */,
+				3A30C4A020CAD0AB001100E0 /* UIStoryboard+SwapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

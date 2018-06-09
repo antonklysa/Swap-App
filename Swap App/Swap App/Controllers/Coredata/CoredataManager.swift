@@ -79,7 +79,7 @@ class CoredataManager: NSObject {
     
     //MARK: operations with Histories objects
     
-    final func createHistory(source: [String: Any]) {
+    final func createHistory(source: [String: Any]) -> History {
         
         let entity = NSEntityDescription.entity(forEntityName: CoredataObjectType.history.rawValue, in: context)
         let history: History = NSManagedObject(entity: entity!, insertInto: context) as! History
@@ -87,13 +87,15 @@ class CoredataManager: NSObject {
         history.input = Int32(source["input"] as! Int)
         history.brand_name = source["brand_name"] as? String
         history.output = Int32(source["output"] as! Int)
-        history.time = Int32(source["time"] as! String)!
+        history.time = Int32(source["time"] as! Int)
         
         do {
             try context.save()
         } catch {
             print("Failed saving")
         }
+        
+        return history
     }
     
     final func getHistories() -> [History]? {

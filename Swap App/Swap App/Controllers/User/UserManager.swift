@@ -13,4 +13,16 @@ class UserManager: NSObject {
     static let sharedInstance: UserManager = UserManager()
     
     var currentUser: UserModel?
+    
+    
+    //MARK: actions
+    
+    private func syncDate() -> String {
+        
+        if let syncDate: String = UserDefaults.standard.string(forKey: "syncDate") {
+            return syncDate
+        }
+        
+        return String()
+    }
 }

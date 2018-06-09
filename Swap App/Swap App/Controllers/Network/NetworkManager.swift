@@ -46,6 +46,8 @@ final class NetworkManager: NSObject {
     
     final func swapWith(success: @escaping ([Brand]?) -> Void, failure: @escaping (Error?) -> Void) {
         
+        CoredataManager.sharedInstance.deleteBrands()
+        
         let report: [[String: Any?]] = CoredataManager.sharedInstance.getHistories()?.count == 0 ? [] : CoredataManager.parseToJSONArray(source: CoredataManager.sharedInstance.getHistories()!) as [[String : Any?]]
         
         let params: [String: Any?] = ["application_type": RequestType.swap.application_type,
