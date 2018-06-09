@@ -147,7 +147,6 @@
 				3A30C93620C92EDA00991239 /* AppDelegate.swift */,
 				3A30C93820C92EDA00991239 /* ViewController.swift */,
 				3A30C94E20C92F1200991239 /* Controllers */,
-				3A30C94D20C92F0300991239 /* Views */,
 				3A30C49320CA6144001100E0 /* Extensions */,
 				3A30C94C20C92EF600991239 /* Resources */,
 				3A30C94B20C92EEA00991239 /* ViewControllers */,
@@ -178,13 +177,6 @@
 				3A30C95220C9355600991239 /* Coredata */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		3A30C94D20C92F0300991239 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		3A30C94E20C92F1200991239 /* Controllers */ = {
@@ -544,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swap App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swap App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

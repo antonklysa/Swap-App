@@ -1,0 +1,6 @@
+framework module Pods_Swap_App {
+  umbrella header "Pods-Swap App-umbrella.h"
+
+  export *
+  module * { export * }
+}

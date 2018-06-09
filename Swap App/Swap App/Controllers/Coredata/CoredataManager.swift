@@ -15,14 +15,51 @@ class CoredataManager: NSObject {
     static let sharedInstance: CoredataManager = CoredataManager()
     
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    private let persistentStoreCoordinator = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.persistentStoreCoordinator
+    private var context : NSManagedObjectContext!
+    private var persistentStoreCoordinator: NSPersistentStoreCoordinator!
     
     private enum CoredataObjectType: String {
         case history = "History"
         case brand = "Brand"
     }
     
+    
+    //MARK: Initializers
+    
+    override init() {
+        super.init()
+        
+        self.setupCoreDataStack()
+    }
+    
+    //MARK: Setup
+    
+    private func setupCoreDataStack() {
+        guard let modelURL = Bundle.main.url(forResource: "Swap_App", withExtension: "momd") else {
+            fatalError("Error loading model from bundle")
+        }
+        
+        guard let mom = NSManagedObjectModel.init(contentsOf: modelURL) else {
+            fatalError("Error initializing mom")
+        }
+        
+        self.persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: mom)
+        self.context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        self.context.persistentStoreCoordinator = self.persistentStoreCoordinator
+        
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let docURL = urls[urls.endIndex - 1]
+        
+        let storeURL = docURL.appendingPathComponent("Swap_App.sqlite")
+        
+        let opt: Dictionary<String, Bool> = [NSMigratePersistentStoresAutomaticallyOption : true, NSInferMappingModelAutomaticallyOption : true]
+        
+        do {
+            try self.persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: opt)
+        } catch {
+            fatalError("Error migrating store")
+        }
+    }
     
     //MARK: operations with Brands objects
     
