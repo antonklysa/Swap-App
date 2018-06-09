@@ -29,6 +29,7 @@
 		6B6D435120CC039700393B02 /* Brand+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434D20CC039700393B02 /* Brand+CoreDataProperties.swift */; };
 		6B6D435220CC039700393B02 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434E20CC039700393B02 /* History+CoreDataClass.swift */; };
 		6B6D435320CC039700393B02 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434F20CC039700393B02 /* History+CoreDataProperties.swift */; };
+		6B6D435620CC047F00393B02 /* HomeScreenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D435520CC047F00393B02 /* HomeScreenTextField.swift */; };
 		9C42B2C9CF4CF7D77A150B32 /* Pods_Swap_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD00C15EA9BE59A5A36FF49 /* Pods_Swap_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		6B6D434D20CC039700393B02 /* Brand+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brand+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6B6D434E20CC039700393B02 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6B6D434F20CC039700393B02 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B6D435520CC047F00393B02 /* HomeScreenTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		3A30C49C20CACFE9001100E0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6B6D435420CC047500393B02 /* Views */,
 				3A30C49D20CAD004001100E0 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -256,6 +259,14 @@
 				5DD00C15EA9BE59A5A36FF49 /* Pods_Swap_App.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B6D435420CC047500393B02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B6D435520CC047F00393B02 /* HomeScreenTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B0C236D54E85942ADF2766D9 /* Pods */ = {
@@ -405,6 +416,7 @@
 				3A30C93720C92EDA00991239 /* AppDelegate.swift in Sources */,
 				3A30C4A020CAD0AB001100E0 /* UIStoryboard+SwapApp.swift in Sources */,
 				6B6D435220CC039700393B02 /* History+CoreDataClass.swift in Sources */,
+				6B6D435620CC047F00393B02 /* HomeScreenTextField.swift in Sources */,
 				6B6D435020CC039700393B02 /* Brand+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

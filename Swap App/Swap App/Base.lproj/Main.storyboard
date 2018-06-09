@@ -325,10 +325,10 @@ v1.0</string>
                                                     <action selector="calculateButtonActionWithSender:" destination="IcC-Fk-K4B" eventType="touchUpInside" id="IUL-L9-FBQ"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ﺍﻟﻤﺎﺭﻛﺔ" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eex-Am-KlU">
-                                                <rect key="frame" x="429" y="363" width="188" height="21"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ﺍﻟﻤﺎﺭﻛﺔ" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eex-Am-KlU" customClass="HomeScreenTextField">
+                                                <rect key="frame" x="398" y="363" width="219" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="188" id="aMO-CA-T4d"/>
+                                                    <constraint firstAttribute="width" constant="219" id="aMO-CA-T4d"/>
                                                     <constraint firstAttribute="height" constant="21" id="luW-EL-Fdt"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
