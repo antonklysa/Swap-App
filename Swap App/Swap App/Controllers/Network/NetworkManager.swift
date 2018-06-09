@@ -45,9 +45,6 @@ final class NetworkManager: NSObject {
     }
     
     final func swapWith(success: @escaping ([Brand]?) -> Void, failure: @escaping (Error?) -> Void) {
-        
-        CoredataManager.sharedInstance.deleteBrands()
-        
         let report: [[String: Any?]] = CoredataManager.sharedInstance.getHistories()?.count == 0 ? [] : CoredataManager.parseToJSONArray(source: CoredataManager.sharedInstance.getHistories()!) as [[String : Any?]]
         
         let params: [String: Any?] = ["application_type": RequestType.swap.application_type,
@@ -59,6 +56,7 @@ final class NetworkManager: NSObject {
             let data: Data = try! JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions(rawValue: 0))
             multipartFormData.appendPart(withHeaders: nil, body: data)
         }, progress: nil, success: { (dataTask, response) in
+            CoredataManager.sharedInstance.deleteBrands()
             CoredataManager.sharedInstance.deleteHistories()
             success(CoredataManager.sharedInstance.createBrands(source: (response as! [String : Any?])["brands"] as! [[String : Any]]))
             
