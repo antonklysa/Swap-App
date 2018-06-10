@@ -86,7 +86,12 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
         let calBrandsVC: CalculateBrandsViewController = UIStoryboard.viewControllerWith(identifier: CalculateBrandsViewController.nameOfClass) as! CalculateBrandsViewController
         calBrandsVC.history = history
         
-        navigationController?.pushViewController(calBrandsVC, animated: true)
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionFade
+        self.navigationController?.view.layer.add(transition, forKey: nil)
+        self.navigationController?.pushViewController(calBrandsVC, animated: false)
     }
     
     
