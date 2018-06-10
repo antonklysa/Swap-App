@@ -14,6 +14,7 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
     
     @IBOutlet weak var brandTextField: UITextField!
     @IBOutlet weak var countTextField: UITextField!
+    @IBOutlet weak var brandsTableView: UITableView!
     
     private var brands: [String] = []
     private var selectedIndex: Int!
@@ -98,21 +99,30 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
     //MARK: UITextFieldDelegate
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        if textField == brandTextField {
-            var index: Int = 0
-            if !(textField.text?.isEmpty)! {
-                index = brands.contains(textField.text!) ? brands.index(of: textField.text!)! : 0
-            }
-            let sheetPicker: ActionSheetStringPicker = ActionSheetStringPicker.init(title: "", rows: brands, initialSelection: index, doneBlock: { [weak self] (picker, valueIndex, value) in
-                textField.text = value as? String
-                self?.selectedIndex = valueIndex
-            }, cancel: { (picker) in
-            }, origin: textField)
-            
-            sheetPicker.show()
-            return false
-        }
+        self.brandsTableView.isHidden = !self.brandsTableView.isHidden
         
-        return true
+        return false
+    }
+}
+
+extension SelectBrandsViewController : UITableViewDataSource, UITableViewDelegate {
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: BrandTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: BrandTableViewCell.self)) as! BrandTableViewCell
+        let brand: Brand = CoredataManager.sharedInstance.getBrands()![indexPath.row]
+        cell.brandLabel.text = brand.name
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return CoredataManager.sharedInstance.getBrands()?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let brand: Brand = CoredataManager.sharedInstance.getBrands()![indexPath.row]
+        self.brandTextField.text = brand.name
+        self.selectedIndex = indexPath.row
+        self.brandsTableView.isHidden = true
     }
 }

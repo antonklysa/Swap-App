@@ -318,6 +318,40 @@ v1.0</string>
                                                     <constraint firstAttribute="height" constant="55" id="bw5-TB-dq7"/>
                                                 </constraints>
                                             </imageView>
+                                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uT4-Zm-1Hn">
+                                                <rect key="frame" x="392" y="392" width="240" height="187"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="187" id="MMX-IH-gj8"/>
+                                                    <constraint firstAttribute="width" constant="240" id="TSB-bc-TT5"/>
+                                                </constraints>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrandTableViewCell" id="ezl-st-hqu" customClass="BrandTableViewCell" customModule="Swap_App" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ezl-st-hqu" id="kLc-z8-OfD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-yz-hCS">
+                                                                    <rect key="frame" x="10" y="11" width="221" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="brandLabel" destination="wTY-yz-hCS" id="ccg-sE-GyC"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="IcC-Fk-K4B" id="dPu-IS-btS"/>
+                                                    <outlet property="delegate" destination="IcC-Fk-K4B" id="XBm-ex-iWC"/>
+                                                </connections>
+                                            </tableView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUp-AJ-eQg">
                                                 <rect key="frame" x="220" y="346" width="152" height="55"/>
                                                 <state key="normal" image="calculate_buttom_image"/>
@@ -379,7 +413,9 @@ v1.0</string>
                                             <constraint firstItem="eex-Am-KlU" firstAttribute="centerY" secondItem="W88-un-AqA" secondAttribute="centerY" id="Wbx-cP-FOb"/>
                                             <constraint firstItem="iUp-AJ-eQg" firstAttribute="height" secondItem="W88-un-AqA" secondAttribute="height" id="ZB5-ga-045"/>
                                             <constraint firstItem="W88-un-AqA" firstAttribute="leading" secondItem="iUp-AJ-eQg" secondAttribute="trailing" constant="20" id="aCg-zR-saL"/>
+                                            <constraint firstItem="uT4-Zm-1Hn" firstAttribute="centerX" secondItem="W88-un-AqA" secondAttribute="centerX" id="d26-9H-vVH"/>
                                             <constraint firstAttribute="trailing" secondItem="w2R-PV-4ya" secondAttribute="trailing" constant="20" id="frB-Ye-I0D"/>
+                                            <constraint firstItem="uT4-Zm-1Hn" firstAttribute="top" secondItem="eex-Am-KlU" secondAttribute="bottom" constant="8" id="kOG-3P-L0K"/>
                                             <constraint firstAttribute="height" constant="748" id="win-vw-wKm"/>
                                             <constraint firstItem="d4k-wX-6io" firstAttribute="height" secondItem="W88-un-AqA" secondAttribute="height" id="xsZ-F9-mXG"/>
                                             <constraint firstItem="w2R-PV-4ya" firstAttribute="top" secondItem="USN-G7-ZIq" secondAttribute="top" constant="20" id="yEI-fz-MYM"/>
@@ -409,6 +445,7 @@ v1.0</string>
                     </view>
                     <connections>
                         <outlet property="brandTextField" destination="eex-Am-KlU" id="082-gf-B8w"/>
+                        <outlet property="brandsTableView" destination="uT4-Zm-1Hn" id="d8V-RD-I7B"/>
                         <outlet property="countTextField" destination="d4k-wX-6io" id="786-P0-40r"/>
                     </connections>
                 </viewController>

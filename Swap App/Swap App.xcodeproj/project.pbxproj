@@ -29,6 +29,7 @@
 		6B6D435220CC039700393B02 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434E20CC039700393B02 /* History+CoreDataClass.swift */; };
 		6B6D435320CC039700393B02 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434F20CC039700393B02 /* History+CoreDataProperties.swift */; };
 		6B6D435620CC047F00393B02 /* HomeScreenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D435520CC047F00393B02 /* HomeScreenTextField.swift */; };
+		6BA468AD20CD5D8500AE8018 /* BrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA468AC20CD5D8500AE8018 /* BrandTableViewCell.swift */; };
 		9C42B2C9CF4CF7D77A150B32 /* Pods_Swap_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD00C15EA9BE59A5A36FF49 /* Pods_Swap_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		6B6D434E20CC039700393B02 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6B6D434F20CC039700393B02 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6B6D435520CC047F00393B02 /* HomeScreenTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTextField.swift; sourceTree = "<group>"; };
+		6BA468AC20CD5D8500AE8018 /* BrandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		3A30C49620CA6483001100E0 /* SelectBrands */ = {
 			isa = PBXGroup;
 			children = (
+				6BA468AE20CD5EF100AE8018 /* Cell */,
 				3A30C49720CA64AD001100E0 /* SelectBrandsViewController.swift */,
 			);
 			path = SelectBrands;
@@ -266,6 +269,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6BA468AE20CD5EF100AE8018 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BA468AC20CD5D8500AE8018 /* BrandTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B0C236D54E85942ADF2766D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +415,7 @@
 				6B6D435320CC039700393B02 /* History+CoreDataProperties.swift in Sources */,
 				3A30C49220CA4E2B001100E0 /* BaseViewController.swift in Sources */,
 				3A30C93F20C92EDA00991239 /* Swap_App.xcdatamodeld in Sources */,
+				6BA468AD20CD5D8500AE8018 /* BrandTableViewCell.swift in Sources */,
 				3A30C4A320CAD17B001100E0 /* SettingsViewController.swift in Sources */,
 				3A30C49520CA616C001100E0 /* UIAlertController+AwapApp.swift in Sources */,
 				3A30C49B20CA64CE001100E0 /* CalculateBrandsViewController.swift in Sources */,
