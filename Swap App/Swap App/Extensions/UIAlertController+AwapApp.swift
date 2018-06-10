@@ -11,7 +11,7 @@ import UIKit
 
 extension UIAlertController {
     class func showCustomAlertFor(error: Error!) {
-        let alertController = UIAlertController(title: "Error.", message: error?.localizedDescription, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: error?.localizedDescription, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
@@ -25,7 +25,7 @@ extension UIAlertController {
     }
     
     class func showCustomErrorAlertWith(message: String) {
-        let alertController = UIAlertController(title: "Error.", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)

@@ -46,26 +46,40 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
     
     //MARK: actions
     
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction private func calculateButtonAction(sender: UIButton) {
         
         view.endEditing(true)
         
-        if (countTextField.text?.isEmpty)! || (brandTextField.text?.isEmpty)! {
-            UIAlertController.showCustomErrorAlertWith(message: "Required field is empty.")
+        if countTextField.text!.isEmpty {
+            UIAlertController.showCustomErrorAlertWith(message: "Veuillez renseigner la quantité")
+            return
+        }
+        
+        if brandTextField.text!.isEmpty {
+            UIAlertController.showCustomErrorAlertWith(message: "Veuillez selectionner une marque")
             return
         }
         
         if !CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: countTextField.text!)) {
-            UIAlertController.showCustomErrorAlertWith(message: "Invalid input number.")
+            UIAlertController.showCustomErrorAlertWith(message: "Le nombre renseigné est incorrect")
             return
         }
         
         let selectedBrand: Brand = CoredataManager.sharedInstance.getBrands()![selectedIndex]
         
+        let outputValue = Int(Double(countTextField.text!)! * selectedBrand.stick_price)
+        if outputValue == 0 {
+            UIAlertController.showCustomErrorAlertWith(message: "Entrez une quantité minimum de 2 pour cette marque")
+            return
+        }
         let historyDict: [String: Any] = ["input": NSNumber(value: Int(countTextField.text!)!),
-                                    "output": NSNumber(value: Int(Double(countTextField.text!)! * selectedBrand.stick_price)),
+                                    "output": NSNumber(value: outputValue),
                                     "brand_name": selectedBrand.name!,
-                                    "time": NSNumber.init(value: 123)]
+                                    "time": NSNumber.init(value: Int(NSDate().timeIntervalSince1970))]
         
         let history: History = CoredataManager.sharedInstance.createHistory(source: historyDict)
         

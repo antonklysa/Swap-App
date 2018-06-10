@@ -16,7 +16,6 @@
 		3A30C4A020CAD0AB001100E0 /* UIStoryboard+SwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C49F20CAD0AB001100E0 /* UIStoryboard+SwapApp.swift */; };
 		3A30C4A320CAD17B001100E0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C4A220CAD17B001100E0 /* SettingsViewController.swift */; };
 		3A30C93720C92EDA00991239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C93620C92EDA00991239 /* AppDelegate.swift */; };
-		3A30C93920C92EDA00991239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C93820C92EDA00991239 /* ViewController.swift */; };
 		3A30C93C20C92EDA00991239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A30C93A20C92EDA00991239 /* Main.storyboard */; };
 		3A30C93F20C92EDA00991239 /* Swap_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C93D20C92EDA00991239 /* Swap_App.xcdatamodeld */; };
 		3A30C94120C92EDC00991239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A30C94020C92EDC00991239 /* Assets.xcassets */; };
@@ -45,7 +44,6 @@
 		3A30C4A220CAD17B001100E0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3A30C93320C92EDA00991239 /* Swap App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swap App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A30C93620C92EDA00991239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A30C93820C92EDA00991239 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A30C93B20C92EDA00991239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A30C93E20C92EDA00991239 /* Swap_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swap_App.xcdatamodel; sourceTree = "<group>"; };
 		3A30C94020C92EDC00991239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				3A30C93620C92EDA00991239 /* AppDelegate.swift */,
-				3A30C93820C92EDA00991239 /* ViewController.swift */,
 				3A30C94E20C92F1200991239 /* Controllers */,
 				3A30C49320CA6144001100E0 /* Extensions */,
 				3A30C94C20C92EF600991239 /* Resources */,
@@ -403,7 +400,6 @@
 				3A30C95920C94FE100991239 /* UserManager.swift in Sources */,
 				3A30C49820CA64AD001100E0 /* SelectBrandsViewController.swift in Sources */,
 				3A30C95120C92FC500991239 /* NetworkManager.swift in Sources */,
-				3A30C93920C92EDA00991239 /* ViewController.swift in Sources */,
 				3A30C48F20CA4E04001100E0 /* LoginViewController.swift in Sources */,
 				6B6D435320CC039700393B02 /* History+CoreDataProperties.swift in Sources */,
 				3A30C49220CA4E2B001100E0 /* BaseViewController.swift in Sources */,

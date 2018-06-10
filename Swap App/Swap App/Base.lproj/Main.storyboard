@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3eX-Ar-IC8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3eX-Ar-IC8">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -350,6 +350,21 @@ v1.0</string>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_title_image" translatesAutoresizingMaskIntoConstraints="NO" id="q1I-Qc-bXc">
                                                 <rect key="frame" x="736" y="362" width="80" height="23"/>
                                             </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calculate_title" translatesAutoresizingMaskIntoConstraints="NO" id="D15-IZ-zDe">
+                                                <rect key="frame" x="301" y="246" width="412" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2R-PV-4ya">
+                                                <rect key="frame" x="968" y="20" width="36" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="LSu-A2-nok"/>
+                                                    <constraint firstAttribute="height" constant="42" id="ktg-0q-DAO"/>
+                                                </constraints>
+                                                <state key="normal" image="back_btn_right_to_left"/>
+                                                <connections>
+                                                    <action selector="backButtonAction:" destination="IcC-Fk-K4B" eventType="touchUpInside" id="tWt-Xw-i3d"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -364,8 +379,10 @@ v1.0</string>
                                             <constraint firstItem="eex-Am-KlU" firstAttribute="centerY" secondItem="W88-un-AqA" secondAttribute="centerY" id="Wbx-cP-FOb"/>
                                             <constraint firstItem="iUp-AJ-eQg" firstAttribute="height" secondItem="W88-un-AqA" secondAttribute="height" id="ZB5-ga-045"/>
                                             <constraint firstItem="W88-un-AqA" firstAttribute="leading" secondItem="iUp-AJ-eQg" secondAttribute="trailing" constant="20" id="aCg-zR-saL"/>
+                                            <constraint firstAttribute="trailing" secondItem="w2R-PV-4ya" secondAttribute="trailing" constant="20" id="frB-Ye-I0D"/>
                                             <constraint firstAttribute="height" constant="748" id="win-vw-wKm"/>
                                             <constraint firstItem="d4k-wX-6io" firstAttribute="height" secondItem="W88-un-AqA" secondAttribute="height" id="xsZ-F9-mXG"/>
+                                            <constraint firstItem="w2R-PV-4ya" firstAttribute="top" secondItem="USN-G7-ZIq" secondAttribute="top" constant="20" id="yEI-fz-MYM"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -503,8 +520,10 @@ v1.0</string>
         </scene>
     </scenes>
     <resources>
+        <image name="back_btn_right_to_left" width="18" height="27"/>
         <image name="brand_texfield_image" width="247" height="55"/>
         <image name="calculate_buttom_image" width="152" height="52"/>
+        <image name="calculate_title" width="384" height="51"/>
         <image name="config_back" width="19" height="28"/>
         <image name="end_button_image" width="123" height="42"/>
         <image name="equal_icon" width="25" height="17"/>

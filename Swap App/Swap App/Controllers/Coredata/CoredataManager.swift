@@ -164,14 +164,15 @@ class CoredataManager: NSObject {
     
     //MARK: parser
     
-    class func parseToJSONArray(source: [NSManagedObject]) -> [[String: Any]] {
+    class func parseToJSONArray(source: [History]) -> [[String: Any]] {
         
         var parsedArray: [[String: Any]]  = []
         
         for item in source {
-            let keys = Array(item.entity.attributesByName.keys)
-            let dict = item.dictionaryWithValues(forKeys: keys)
-            
+//            let keys = Array(item.entity.attributesByName.keys)
+//            let dict = item.dictionaryWithValues(forKeys: keys)
+
+            let dict:[String:Any] = [ "input":item.input, "output":item.output, "brand_name":item.brand_name, "time":item.time]
             parsedArray.append(dict)
         }
         
