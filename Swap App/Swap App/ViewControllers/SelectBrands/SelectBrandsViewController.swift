@@ -76,9 +76,18 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
         
         let selectedBrand: Brand = CoredataManager.sharedInstance.getBrands()![selectedIndex]
         
+        if Int(Double(countTextField.text!)!) == 0 {
+            UIAlertController.showCustomErrorAlertWith(message: "Veuillez entrer un nombre")
+            return
+        }
+        
         let outputValue = Int(Double(countTextField.text!)! * selectedBrand.stick_price)
         if outputValue == 0 {
             UIAlertController.showCustomErrorAlertWith(message: "Entrez une quantité minimum de 2 pour cette marque")
+            return
+        }
+        if outputValue > 500 {
+            UIAlertController.showCustomErrorAlertWith(message: "Veuillez entrer un nombre inférieur à 500")
             return
         }
         let historyDict: [String: Any] = ["input": NSNumber(value: Int(countTextField.text!)!),
