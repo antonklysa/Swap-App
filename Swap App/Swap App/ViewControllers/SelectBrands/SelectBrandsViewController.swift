@@ -81,7 +81,8 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
             return
         }
         
-        let outputValue = Int(Double(countTextField.text!)! * selectedBrand.stick_price)
+        let chesterfieldStickPrice: Double = CoredataManager.sharedInstance.chesterfieldStickPrice
+        let outputValue = Int((Double(countTextField.text!)! * selectedBrand.stick_price)/chesterfieldStickPrice)
         if outputValue == 0 {
             UIAlertController.showCustomErrorAlertWith(message: "Entrez une quantité minimum de 2 pour cette marque")
             return

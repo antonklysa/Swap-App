@@ -24,6 +24,7 @@
 		3A30C95720C9401700991239 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C95620C9401700991239 /* UserModel.swift */; };
 		3A30C95920C94FE100991239 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C95820C94FE100991239 /* UserManager.swift */; };
 		3A30C95F20C96A3E00991239 /* CoredataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30C95E20C96A3E00991239 /* CoredataManager.swift */; };
+		6B6880AF20CEB3AF00CD4C9E /* GE_Flow_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B6880AE20CEB3AE00CD4C9E /* GE_Flow_Bold.otf */; };
 		6B6D435020CC039700393B02 /* Brand+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434C20CC039700393B02 /* Brand+CoreDataClass.swift */; };
 		6B6D435120CC039700393B02 /* Brand+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434D20CC039700393B02 /* Brand+CoreDataProperties.swift */; };
 		6B6D435220CC039700393B02 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434E20CC039700393B02 /* History+CoreDataClass.swift */; };
@@ -57,6 +58,7 @@
 		3A30C95E20C96A3E00991239 /* CoredataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataManager.swift; sourceTree = "<group>"; };
 		3B9D8B673DA87ECB163CDE6E /* Pods-Swap App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swap App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swap App/Pods-Swap App.release.xcconfig"; sourceTree = "<group>"; };
 		5DD00C15EA9BE59A5A36FF49 /* Pods_Swap_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swap_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6880AE20CEB3AE00CD4C9E /* GE_Flow_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GE_Flow_Bold.otf; sourceTree = "<group>"; };
 		6B6D434C20CC039700393B02 /* Brand+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brand+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6B6D434D20CC039700393B02 /* Brand+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brand+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6B6D434E20CC039700393B02 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		6B9847E620CE5C2F008A3BA0 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				6B6880AE20CEB3AE00CD4C9E /* GE_Flow_Bold.otf */,
 				6B9847E720CE5C3A008A3BA0 /* 29ltbukraregular.otf */,
 			);
 			path = Font;
@@ -357,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6880AF20CEB3AF00CD4C9E /* GE_Flow_Bold.otf in Resources */,
 				3A30C94420C92EDC00991239 /* LaunchScreen.storyboard in Resources */,
 				6B9847E820CE5C3A008A3BA0 /* 29ltbukraregular.otf in Resources */,
 				3A30C94120C92EDC00991239 /* Assets.xcassets in Resources */,

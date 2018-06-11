@@ -462,10 +462,10 @@ v1.0</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_center_image" translatesAutoresizingMaskIntoConstraints="NO" id="rvx-Gn-gDs">
-                                <rect key="frame" x="40" y="226" width="377" height="336"/>
+                                <rect key="frame" x="40" y="226" width="461" height="410"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="336" id="U1m-RZ-YaF"/>
-                                    <constraint firstAttribute="width" constant="377" id="xAe-oU-x8Z"/>
+                                    <constraint firstAttribute="height" constant="410" id="U1m-RZ-YaF"/>
+                                    <constraint firstAttribute="width" constant="461" id="xAe-oU-x8Z"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equal_icon" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-oF-0Pv">
@@ -540,7 +540,7 @@ v1.0</string>
                             <constraint firstItem="vTQ-oF-0Pv" firstAttribute="leading" secondItem="xTS-VZ-r8r" secondAttribute="trailing" constant="20" id="WQP-KH-xG5"/>
                             <constraint firstItem="vTQ-oF-0Pv" firstAttribute="centerY" secondItem="4W9-Iq-A6Z" secondAttribute="centerY" id="dGj-Sh-lK4"/>
                             <constraint firstItem="vTQ-oF-0Pv" firstAttribute="trailing" secondItem="yaw-8k-OZY" secondAttribute="trailing" id="jTf-pE-GAq"/>
-                            <constraint firstItem="rvx-Gn-gDs" firstAttribute="centerY" secondItem="4W9-Iq-A6Z" secondAttribute="centerY" id="o8B-2v-KWG"/>
+                            <constraint firstItem="rvx-Gn-gDs" firstAttribute="centerY" secondItem="4W9-Iq-A6Z" secondAttribute="centerY" constant="37" id="o8B-2v-KWG"/>
                             <constraint firstItem="4W9-Iq-A6Z" firstAttribute="trailing" secondItem="yaw-8k-OZY" secondAttribute="trailing" constant="35" id="rrh-6o-ggR"/>
                             <constraint firstItem="xTS-VZ-r8r" firstAttribute="top" secondItem="tLZ-G2-OVi" secondAttribute="bottom" constant="20" id="sEV-1L-ryp"/>
                         </constraints>

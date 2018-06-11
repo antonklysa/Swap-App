@@ -16,7 +16,6 @@ class CalculateBrandsViewController: BaseViewController {
     
     var history: History!
     
-    
     //MARK: lifecycle
     
     override func viewDidLoad() {
@@ -24,8 +23,8 @@ class CalculateBrandsViewController: BaseViewController {
         
         inputLabel.font = UIFont.init(name: "29LTBukra-Regular", size: 30.0)
         inputLabel.text = "\(history.input)" + " " + "\(history.brand_name!)"
-        outputLabel.font = UIFont.init(name: "29LTBukra-Regular", size: 30.0)
-        outputLabel.text = "\(history.output)" + " " + "ﺪﻠﻴﻓﺮﺘﺴﻴﺷ "
+        outputLabel.font = UIFont.init(name: "GEFlow-Bold", size: 37.0)
+        outputLabel.text = "ﺪﻠﻴﻓﺮﺘﺴﻴﺷ" + " " + "\(history.output)"
     }
     
     
@@ -34,4 +33,5 @@ class CalculateBrandsViewController: BaseViewController {
     @IBAction private func endButtonAction(sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
+    
 }

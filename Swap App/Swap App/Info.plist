@@ -27,6 +27,7 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>GE_Flow_Bold.otf</string>
 		<string>29ltbukraregular.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

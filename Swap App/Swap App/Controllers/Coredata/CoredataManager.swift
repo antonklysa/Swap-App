@@ -32,6 +32,24 @@ class CoredataManager: NSObject {
         self.setupCoreDataStack()
     }
     
+    //MARK: Data
+    
+    var chesterfieldStickPrice : Double {
+        get {
+            let value: Double? =  UserDefaults.standard.object(forKey: "chesterfieldStickPrice") as? Double
+            if value == nil {
+                return 1.0
+            }
+            return value!
+        }
+        
+        set {
+            let defaults = UserDefaults.standard
+            defaults.set(newValue, forKey: "chesterfieldStickPrice")
+            defaults.synchronize()
+        }
+    }
+    
     //MARK: Setup
     
     private func setupCoreDataStack() {

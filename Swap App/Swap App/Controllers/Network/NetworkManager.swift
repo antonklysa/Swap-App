@@ -58,6 +58,9 @@ final class NetworkManager: NSObject {
         manager.post(RequestType.swap.urlString, parameters: params, progress: nil, success: { (task, response) in
             CoredataManager.sharedInstance.deleteBrands()
             CoredataManager.sharedInstance.deleteHistories()
+            let chesterfieldPrice = (response as! [String : Any?])["chester"] as! [String : Any]
+            let stickPrice = chesterfieldPrice["stick_price"] as! Double
+            CoredataManager.sharedInstance.chesterfieldStickPrice = stickPrice
             success(CoredataManager.sharedInstance.createBrands(source: (response as! [String : Any?])["brands"] as! [[String : Any]]))
         }) { (task, error) in
             failure(error)
