@@ -17,12 +17,15 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
     @IBOutlet weak var brandsTableView: UITableView!
     
     private var brands: [String] = []
-    private var selectedIndex: Int!
+    private var selectedIndex: Int! = 0
     
     //MARK: lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.brandTextField.font = UIFont.init(name: "29LTBukra-Regular", size: 27.0)
+        self.countTextField.font = UIFont.init(name: "29LTBukra-Regular", size: 27.0)
         
         //arabic texfields
         brandTextField.semanticContentAttribute = .forceRightToLeft
@@ -112,6 +115,13 @@ extension SelectBrandsViewController : UITableViewDataSource, UITableViewDelegat
         let cell: BrandTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: BrandTableViewCell.self)) as! BrandTableViewCell
         let brand: Brand = CoredataManager.sharedInstance.getBrands()![indexPath.row]
         cell.brandLabel.text = brand.name
+        if (indexPath.row == self.selectedIndex) {
+            cell.backgroundColor = UIColor(red: 215.0/255.0, green: 24.0/255.0, blue: 42.0/255.0, alpha: 1.0)
+            cell.brandLabel.textColor = UIColor.white
+        } else {
+            cell.backgroundColor = UIColor.white
+            cell.brandLabel.textColor = UIColor.black
+        }
         return cell
     }
     
@@ -124,5 +134,7 @@ extension SelectBrandsViewController : UITableViewDataSource, UITableViewDelegat
         self.brandTextField.text = brand.name
         self.selectedIndex = indexPath.row
         self.brandsTableView.isHidden = true
+        
+        tableView.reloadData()
     }
 }

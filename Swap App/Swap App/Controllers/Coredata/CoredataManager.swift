@@ -169,8 +169,6 @@ class CoredataManager: NSObject {
         var parsedArray: [[String: Any]]  = []
         
         for item in source {
-//            let keys = Array(item.entity.attributesByName.keys)
-//            let dict = item.dictionaryWithValues(forKeys: keys)
 
             let dict:[String:Any] = [ "input":item.input, "output":item.output, "brand_name":item.brand_name, "time":item.time]
             parsedArray.append(dict)

@@ -12,4 +12,10 @@ class BrandTableViewCell: UITableViewCell {
 
     @IBOutlet weak var brandLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.selectionStyle = .none
+    }
+    
 }

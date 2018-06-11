@@ -22,7 +22,9 @@ class CalculateBrandsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        inputLabel.font = UIFont.init(name: "29LTBukra-Regular", size: 41.0)
         inputLabel.text = "\(history.input)" + " " + "\(history.brand_name!)"
+        outputLabel.font = UIFont.init(name: "29LTBukra-Regular", size: 41.0)
         outputLabel.text = "\(history.output)" + " " + "ﺪﻠﻴﻓﺮﺘﺴﻴﺷ "
     }
     

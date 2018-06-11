@@ -29,6 +29,7 @@
 		6B6D435220CC039700393B02 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434E20CC039700393B02 /* History+CoreDataClass.swift */; };
 		6B6D435320CC039700393B02 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D434F20CC039700393B02 /* History+CoreDataProperties.swift */; };
 		6B6D435620CC047F00393B02 /* HomeScreenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D435520CC047F00393B02 /* HomeScreenTextField.swift */; };
+		6B9847E820CE5C3A008A3BA0 /* 29ltbukraregular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B9847E720CE5C3A008A3BA0 /* 29ltbukraregular.otf */; };
 		6BA468AD20CD5D8500AE8018 /* BrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA468AC20CD5D8500AE8018 /* BrandTableViewCell.swift */; };
 		9C42B2C9CF4CF7D77A150B32 /* Pods_Swap_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD00C15EA9BE59A5A36FF49 /* Pods_Swap_App.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		6B6D434E20CC039700393B02 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6B6D434F20CC039700393B02 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6B6D435520CC047F00393B02 /* HomeScreenTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTextField.swift; sourceTree = "<group>"; };
+		6B9847E720CE5C3A008A3BA0 /* 29ltbukraregular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 29ltbukraregular.otf; sourceTree = "<group>"; };
 		6BA468AC20CD5D8500AE8018 /* BrandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +187,7 @@
 		3A30C94C20C92EF600991239 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6B9847E620CE5C2F008A3BA0 /* Font */,
 				3A30C95220C9355600991239 /* Coredata */,
 			);
 			path = Resources;
@@ -269,6 +272,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6B9847E620CE5C2F008A3BA0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6B9847E720CE5C3A008A3BA0 /* 29ltbukraregular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		6BA468AE20CD5EF100AE8018 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A30C94420C92EDC00991239 /* LaunchScreen.storyboard in Resources */,
+				6B9847E820CE5C3A008A3BA0 /* 29ltbukraregular.otf in Resources */,
 				3A30C94120C92EDC00991239 /* Assets.xcassets in Resources */,
 				3A30C93C20C92EDA00991239 /* Main.storyboard in Resources */,
 			);
