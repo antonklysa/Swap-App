@@ -50,7 +50,14 @@ class SettingsViewController: BaseViewController {
     }
     
     @IBAction func disconnectButtonAction(sender: UIButton) {
-        //TODO: implement disconnect function
+        MBProgressHUD.showAdded(to: view, animated: true)
+        NetworkManager.sharedInstance.disconnectWith(success: {
+            UserManager.sharedInstance.currentUser = nil
+            self.view.window!.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: LoginViewController.self))
+        }) { (error) in
+            MBProgressHUD.hide(for: self.view, animated: true)
+            UIAlertController.showCustomAlertFor(error: error!)
+        }
     }
     
     @IBAction func syncButtonAction(sender: UIButton) {

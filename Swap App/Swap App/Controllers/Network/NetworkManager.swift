@@ -18,6 +18,7 @@ final class NetworkManager: NSObject {
     private struct RequestType {
         static let login = (urlString: "Sync/login", application_type: "SWP", did: UIDevice.current.identifierForVendor?.uuidString)
         static let swap = (urlString: "swap", application_type: "SWP", did: UIDevice.current.identifierForVendor?.uuidString)
+        static let disconnect = (urlString: "Sync/disconnect", application_type: "SWP", did: UIDevice.current.identifierForVendor?.uuidString)
     }
     
     final func loginWith(name: String!, password: String!, success: @escaping (UserModel?) -> Void, failure: @escaping (Error?) -> Void) {
@@ -58,6 +59,22 @@ final class NetworkManager: NSObject {
             CoredataManager.sharedInstance.deleteBrands()
             CoredataManager.sharedInstance.deleteHistories()
             success(CoredataManager.sharedInstance.createBrands(source: (response as! [String : Any?])["brands"] as! [[String : Any]]))
+        }) { (task, error) in
+            failure(error)
+        }
+    }
+    
+    final func disconnectWith(success: @escaping () -> Void, failure: @escaping (Error?) -> Void) {
+        let params: [String: Any?] = ["application_type": RequestType.swap.application_type,
+                                      "hostess_id": UserManager.sharedInstance.currentUser?.host_id,
+                                      "did": RequestType.swap.did]
+        
+        manager.requestSerializer = AFJSONRequestSerializer() ;
+        manager.responseSerializer = AFJSONResponseSerializer();
+        manager.post(RequestType.disconnect.urlString, parameters: params, progress: nil, success: { (task, response) in
+            CoredataManager.sharedInstance.deleteBrands()
+            CoredataManager.sharedInstance.deleteHistories()
+            success()
         }) { (task, error) in
             failure(error)
         }

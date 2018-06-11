@@ -13,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Abl-AU-n6k">
             <objects>
-                <navigationController id="3eX-Ar-IC8" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginViewController" id="3eX-Ar-IC8" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bp7-JJ-7rz">
                         <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,7 +29,7 @@
         <!--Login View Controller-->
         <scene sceneID="QoU-NX-eGU">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X1u-W3-scV" customClass="LoginViewController" customModule="Swap_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="X1u-W3-scV" customClass="LoginViewController" customModule="Swap_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YXP-GF-OfJ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
