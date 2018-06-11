@@ -28,10 +28,11 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
         self.countTextField.font = UIFont.init(name: "29LTBukra-Regular", size: 27.0)
         
         //arabic texfields
-        brandTextField.semanticContentAttribute = .forceRightToLeft
-        countTextField.semanticContentAttribute = .forceRightToLeft
+//        brandTextField.semanticContentAttribute = .forceRightToLeft
+//        countTextField.semanticContentAttribute = .forceRightToLeft
         brandTextField.textAlignment = .right
         countTextField.textAlignment = .center
+        self.brandTextField.placeholder = String("ﺍﻟﻤﺎﺭﻛﺔ".reversed())
         
         for item in CoredataManager.sharedInstance.getBrands()! {
              brands.append(item.name!)
