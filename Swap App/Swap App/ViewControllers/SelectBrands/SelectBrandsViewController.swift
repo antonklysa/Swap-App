@@ -87,7 +87,7 @@ class SelectBrandsViewController: BaseViewController, UITextFieldDelegate{
             UIAlertController.showCustomErrorAlertWith(message: "Entrez une quantité minimum de 2 pour cette marque")
             return
         }
-        if outputValue > 500 {
+        if Double(countTextField.text!)! > 500.0 {
             UIAlertController.showCustomErrorAlertWith(message: "Veuillez entrer un nombre inférieur à 500")
             return
         }

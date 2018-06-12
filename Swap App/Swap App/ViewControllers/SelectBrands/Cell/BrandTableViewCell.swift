@@ -16,6 +16,7 @@ class BrandTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         self.selectionStyle = .none
+        self.brandLabel.font = UIFont.init(name: "29LTBukra-Regular", size: self.brandLabel.font.pointSize)
     }
     
 }
